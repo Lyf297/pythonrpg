@@ -1,0 +1,6 @@
+{
+    "Goblin": {"hp": 10, "atk": 3},
+    "Wolf": {"hp": 12, "atk": 4},
+    "Bandit": {"hp": 15, "atk": 5},
+    "Dark Serpent": {"hp": 50, "atk": 12}
+}

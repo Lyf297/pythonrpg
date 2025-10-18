@@ -2,9 +2,9 @@ from utils import type_effect
 
 def shop(player):
     items = [
-        {"name":"Potion", "price":10, "effect":"heal"},
-        {"name":"Steel Sword", "price":30, "effect":"atk"},
-        {"name":"Iron Armor", "price":25, "effect":"def"}
+        {"name":"Potion","price":10,"effect":"heal"},
+        {"name":"Steel Sword","price":30,"effect":"atk"},
+        {"name":"Iron Armor","price":25,"effect":"def"}
     ]
     print("\n🏪 Toko Desa")
     for i,item in enumerate(items,1):
@@ -17,7 +17,7 @@ def shop(player):
         if player.gold >= item['price']:
             player.gold -= item['price']
             if item['effect']=="heal":
-                player.hp = min(player.max_hp, player.hp + 10)
+                player.hp = min(player.max_hp, player.hp+10)
                 type_effect("Kamu meminum Potion. HP bertambah 10!\n",0.03)
             elif item['effect']=="atk":
                 player.atk += 2

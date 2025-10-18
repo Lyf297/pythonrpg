@@ -7,7 +7,7 @@ class Player:
         self.atk = 5
         self.defense = 2
         self.gold = 0
-        self.equipment = {"weapon": "Iron Sword", "armor": "Leather Armor"}
+        self.equipment = {"weapon":"Iron Sword","armor":"Leather Armor"}
 
     def show_status(self):
         print(f"\n=== STATUS {self.name} ===")
